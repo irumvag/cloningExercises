@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
-    <section class="w-full bg-cover bg-[url(/src/img/banner-bg.jpg)]">
-    <nav class="flex mx-auto w-[87%] py-10 ">
-      <div class="sm:flex-auto "> 
+    <section class="w-full h-max bg-local rounded-b-[150px] bg-bottom-left pt-10 bg-cover bg-[url(/src/img/banner-bg.jpg)]">
+    <div></div>
+    <nav id="navbar" class="sm:w-[1220px] px-2 mx-auto flex justify-between">
+      <div class="w-30"> 
         <img src="src/img/logo.png" alt="Lugx log">
       </div>
-      <div class="flex-auto">
-        <ul class="flex justify-between items-center text-white">
+      <div class="">
+        <ul class="sm:flex hidden justify-between items-center text-white">
           <li class="rounded-3xl p-2 px-4 flex justify-end items-end bg-[#1b7ffa] ">Home</li>
           <li class="hover:rounded-3xl hover:bg-[#1b7ffa] px-4 p-2">Our Shop</li>
           <li class="hover:rounded-3xl hover:bg-[#1b7ffa] px-4 p-2">Product Details</li>
@@ -23,9 +24,67 @@
         </ul>
       </div>
     </nav>
-    <div class="flex">
+    <div class="flex flex-col-reverse px-5 pt-5 sm:flex-row justify-around items-center">
 
+      <div class="flex flex-col w-fit h-fit sm:justify-start items-center sm:gap-10 gap-3">
+        <p class="text-xl text-white font-sans">WELCOME TO LUGX</p>
+        <div>
+          <h1 class="sm:text-5xl text-3xl text-center font-bold text-white">BEST GAMING SITE EVER!</h1>
+          <div class="flex justify-center w-110">
+            <img src="src/img/caption-dec.png" class="" alt="">
+          </div>
+        </div>
+        <p class="text-white sm:font-normal w-">LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You 
+          <br>can download and use this layout for commercial purposes. Please tell your friends about <br>TemplateMo.</p>
+        <div class="flex">
+          <input type="text" class="p-2 rounded-3xl px-5 w-80 bg-white" placeholder="Type Something">
+          <div class="relative right-10 p-2  text-white bg-red-400 w-30 rounded-3xl">SEARCH NOW</div>
+        </div>
+      </div>
+      
+      <div class="flex flex-col">
+        <div >
+          <span class="relative sm:left-78 left-70 sm:top-15 top-13 p-2 px-3 bg-blue-400 rounded-3xl text-white font-bold sm:text-2xl text-xl m-3">$22</span>
+        </div>
+        <img class="rounded-3xl" src="src/img/banner-image.jpg" alt="Game alt">
+        <div class="flex justify-start">
+          <span class="relative sm:-top-18 -top-10 z-23 sm:-left-13 -left-4 sm:w-25 sm:h-25 w-15 h-15 bg-red-400 rounded-full flex justify-center items-center sm:text-4xl font-bold text-white">-40%</span>
+        </div>
+      </div>
     </div>
     </section>
+    
+    <script>
+      const nav = document.getElementById("navbar"); // or your nav selector
+      console.log("hello", nav);
+
+      window.addEventListener("scroll", () => {
+        console.log("scrolling...", window.scrollY);
+
+        if (window.scrollY > 50) {
+            nav.classList.toggle("sticky");
+            nav.classList.toggle("shadow");
+            nav.classList.toggle("rounded-b-xl");
+            nav.classList.toggle("p-5");
+            nav.classList.toggle("bg-[#0171f9]");
+            nav.classList.toggle("transition-all");
+            nav.classList.toggle("duration-300");
+            nav.classList.toggle("z-50");
+            console.log("hhhhhhhhhhh")
+        } else {
+          nav.classList.remove(
+            "sticky",
+            "shadow",
+            "rounded-b-xl",
+            "p-5",
+            "bg-[#0171f9]",
+            "transition-all",
+            "duration-300",
+            "z-50"
+          );
+        }
+      });
+
+    </script>
   </body>
 </html>
