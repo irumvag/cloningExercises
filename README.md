@@ -1,5 +1,6 @@
 ## Css Trial Challenge
  
+### In file VannillaCSSCloning
 This was homepage writing challenge using HTML and CSS.
 
 As a trial website cloning challenge today you will clone this page `[demo]https://www.fewo-direkt.de/. (Ignore the QR-code pop-up and ignore the cookie-banner). 
@@ -12,3 +13,23 @@ if you have time, try to implement the sticky header.
 If something is difficult for you - leave it for last. Don't waste time on it in the beginning.
 Prioritize the things where you will make the fastest progress.
 
+```bash 
+    open index.html on one of your browser chrome , firefox, brave,  microsoft edge, ....
+```
+
+---
+Tailwindcss project + vite environment in Lugx,LaslesVPN,Shoes_shop,Tailwindlearning
+## On other tailwindcss projects
+You can clone the site 
+```bash
+    git clone https://github.com/irumvag/cssTrialChallenge.git
+```
+### how to run
+you must have node 19+
+```bash
+    npm install 
+    npm run dev
+```
+---
+### Descrimer 
+All this project are for running purpose.
