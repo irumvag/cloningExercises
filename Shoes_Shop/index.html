@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9d07f12b47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="z-10 relative flex flex-wrap items-center justify-between px-10 xl:px-24">
+      <!--Logo  -->
+      <a href=""><img src="./src/img/nike-logo.svg" alt="" /></a>
+      <!-- Burger button -->
+      <button class="lg:hidden" id="humb">
+        <i
+          class="fa-solid fa-bars p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 rounded-lg"
+        ></i>
+      </button>
+      <!-- menu list -->
+      <div id="navbar" class="w-full hidden lg:block lg:w-auto">
+        <ul
+          class="flex flex-col lg:space-x-8 lg:flex-row bg-gray-50 text-lg border lg:bg-transparent lg:border-none border-gray-50 rounded-lg p-4"
+        >
+          <li
+            class="px-3 py-2 cursor-pointer first:bg-blue-500 first:text-white lg:first:bg-transparent lg:first:text-blue-500"
+          >
+            Home
+          </li>
+          <li class="px-3 py-2 cursor-pointer not-first:hover:bg-gray-100">
+            About
+          </li>
+          <li class="px-3 py-2 cursor-pointer not-first:hover:bg-gray-100">
+            Services
+          </li>
+          <li class="px-3 py-2 cursor-pointer hover:bg-gray-100 lg:hover:text-blue-500 lg:hover:bg-transparent lg:text-white">
+            Pricing
+          </li>
+          <li class="px-3 py-2 cursor-pointer hover:bg-gray-100 lg:hover:text-blue-500 lg:hover:bg-transparent lg:text-white ">
+            Contact
+          </li>
+        </ul>
+      </div>
+      <!-- Card button -->
+      <div class="fixed left-4 bottom-4 lg:static cursor-pointer lg:mr-8">
+        <div class="rounded-full bg-white shadow-md h-12 w-12 flex-center">
+          <i class="fa-solid fa-mask"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="flex flex-col lg:flex-row-reverse px-10 xl:px-24 space-y-4">
+      <!-- shoe image -->
+      <div class="flex-1 lg:-mt-32 lg:ml-28">
+        <div class="h-full flex flex-center bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
+        <img src="./src/img/n1-min.png" alt="">
+        </div>
+      </div> 
+      <!--shoe text description -->
+      <div class="flex-1 space-y-6">
+        <div class="text-5xl font-black md:text-9xl">Nike Air max 270</div>
+        <div class="font-medium md:text-xl">
+          The Nike Air Max 270 is a lifestle shoe that's sure to turn heads with its vibrant color gradient.
+        </div>
+        <div class="text-3xl font-extrabold md:text-6xl">
+          100 $
+        </div>
+        <!-- shoe buttom and links -->
+        <div class="space-x-10">
+        <button class="h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">Add to bag</button>
+        <a href="#" class="lg:text-lg font-bold underline underline-offset-4">
+          view details
+        </a>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -15,6 +15,7 @@
     "vite-plugin-svgr": "^4.3.0"
   },
   "dependencies": {
+    "@fontsource-variable/nunito-sans": "^5.2.6",
     "@tailwindcss/vite": "^4.1.12",
     "tailwindcss": "^4.1.12"
   }
