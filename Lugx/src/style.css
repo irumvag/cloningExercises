@@ -7,3 +7,20 @@
     @apply text-2xl;
  }
 }
+@layer utilities{
+   .flex-center{
+      @apply flex justify-center items-center;
+   }
+}
+@theme{
+   --animate-fadeIn: fadeIn 1s ease-in-out;
+   @keyframes fadeIn {
+      0%{
+         opacity: 0;
+      }
+      100%{
+         opacity: 1;
+      }
+      
+   }
+}
