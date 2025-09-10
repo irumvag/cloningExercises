@@ -2,6 +2,6 @@
 
 @layer utilities{
   .btn{
-    @apply py-4 px-6 rounded-xl; 
+    @apply py-4 px-6 rounded-full text-white; 
   }
 }
