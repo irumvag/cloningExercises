@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9d07f12b47.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="animate-fadIn px-10 xl:px-24">
+
+        <!-- Navbar -->
+        <nav
+          class="z-10 relative flex flex-wrap items-center justify-between"
+        >
+          <!--Logo  -->
+          <a href=""><img src="./src/img/nike-logo.svg" alt="" /></a>
+          <!-- Burger button -->
+          <button class="lg:hidden" id="humb">
+            <i
+              class="fa-solid fa-bars p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 rounded-lg"
+            ></i>
+          </button>
+          <!-- menu list -->
+          <div id="navbar" class="w-full hidden lg:block lg:w-auto">
+            <ul
+              class="flex flex-col lg:space-x-8 lg:flex-row bg-gray-50 text-lg border lg:bg-transparent lg:border-none border-gray-50 rounded-lg p-4"
+            >
+              <li
+                class="px-3 py-2 cursor-pointer first:bg-blue-500 first:text-white lg:first:bg-transparent lg:first:text-blue-500"
+              >
+                Home
+              </li>
+              <li class="px-3 py-2 cursor-pointer not-first:hover:bg-gray-100">
+                About
+              </li>
+              <li class="px-3 py-2 cursor-pointer not-first:hover:bg-gray-100">
+                Services
+              </li>
+              <li
+                class="px-3 py-2 cursor-pointer hover:bg-gray-100 lg:hover:text-blue-500 lg:hover:bg-transparent lg:text-white"
+              >
+                Pricing
+              </li>
+              <li
+                class="px-3 py-2 cursor-pointer hover:bg-gray-100 lg:hover:text-blue-500 lg:hover:bg-transparent lg:text-white"
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+          <!-- Card button -->
+          <div class="btn-press-anim fixed left-4 bottom-4 lg:static cursor-pointer lg:mr-8">
+            <div class="rounded-full bg-white shadow-md h-12 w-12 flex-center">
+              <i class="fa-solid fa-mask"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- Text and image descrption -->
+        <div class="flex flex-col lg:flex-row-reverse space-y-4">
+          <!-- shoe image -->
+          <div class="flex-1 lg:-mt-32 lg:ml-28">
+            <div
+              class="h-full flex flex-center bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]"
+            >
+              <img src="./src/img/n1-min.png" alt="" class="animate-float"/>
+            </div>
+          </div>
+          <!--shoe text description -->
+          <div class="flex-1 space-y-6">
+            <div class="text-5xl font-black md:text-9xl">Nike Air max 270</div>
+            <div class="font-medium md:text-xl">
+              The Nike Air Max 270 is a lifestle shoe that's sure to turn heads with
+              its vibrant color gradient.
+            </div>
+            <div class="flex space-x-6">
+                <div class="text-3xl font-extrabold md:text-6xl">100 $</div>
+                <div class="relative">
+                <select name="QTY" id="" class="w-24 appearance-none border border-gray-300 p-4">
+                  <option value="" selected disabled hidden>QTY</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex-center pr-3">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="Angle-Down--Streamline-Unicons" height="16" width="16">
+                  <desc>
+                    Angle Down Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <path d="M15.4 3.7868c-0.27873333333333333 -0.27699999999999997 -0.6556666666666666 -0.4325333333333333 -1.0486 -0.4325333333333333 -0.393 0 -0.7699333333333334 0.15553333333333333 -1.0486666666666666 0.4325333333333333l-5.339933333333333 5.265533333333333 -5.265533333333333 -5.265533333333333c-0.2786666666666666 -0.27699999999999997 -0.6556666666666666 -0.4325333333333333 -1.0486 -0.4325333333333333S0.8786666666666667 3.5098000000000003 0.6 3.7868c-0.1394 0.1383333333333333 -0.25006666666666666 0.30279999999999996 -0.3256 0.48406666666666665 -0.07553333333333333 0.18126666666666663 -0.1144 0.37566666666666665 -0.1144 0.5720666666666666 0 0.1963333333333333 0.03886666666666666 0.39073333333333327 0.1144 0.5720666666666666 0.07553333333333333 0.1811333333333333 0.18619999999999998 0.3456666666666666 0.3256 0.484l6.306733333333334 6.306733333333334c0.1383333333333333 0.1394 0.30279999999999996 0.25006666666666666 0.484 0.3256 0.18133333333333335 0.07553333333333333 0.3757333333333333 0.1144 0.5720666666666666 0.1144s0.39073333333333327 -0.0388 0.5720666666666666 -0.1144c0.18119999999999997 -0.07553333333333333 0.3456666666666666 -0.18619999999999998 0.484 -0.3256L15.4 5.898999999999999c0.1394 -0.1383333333333333 0.25006666666666666 -0.3028666666666666 0.3256 -0.484 0.0756 -0.18133333333333335 0.1144 -0.3757333333333333 0.1144 -0.5721333333333333 0 -0.1963333333333333 -0.0388 -0.39073333333333327 -0.1144 -0.572 -0.07553333333333333 -0.18126666666666663 -0.18619999999999998 -0.3458 -0.3256 -0.48406666666666665Z" fill="#000000" stroke-width="0.6667"></path>
+                </svg>
+                </div>
+                </div>
+                <div class="relative">
+                <select name="SIZE" id="" class="w-24 appearance-none border border-gray-300 p-4 ">
+                  <option value="" selected disabled hidden>SIZE</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex-center pr-3">
+                <svg
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="Angle-Down--Streamline-Unicons" height="16" width="16">
+                  <desc>
+                    Angle Down Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <path d="M15.4 3.7868c-0.27873333333333333 -0.27699999999999997 -0.6556666666666666 -0.4325333333333333 -1.0486 -0.4325333333333333 -0.393 0 -0.7699333333333334 0.15553333333333333 -1.0486666666666666 0.4325333333333333l-5.339933333333333 5.265533333333333 -5.265533333333333 -5.265533333333333c-0.2786666666666666 -0.27699999999999997 -0.6556666666666666 -0.4325333333333333 -1.0486 -0.4325333333333333S0.8786666666666667 3.5098000000000003 0.6 3.7868c-0.1394 0.1383333333333333 -0.25006666666666666 0.30279999999999996 -0.3256 0.48406666666666665 -0.07553333333333333 0.18126666666666663 -0.1144 0.37566666666666665 -0.1144 0.5720666666666666 0 0.1963333333333333 0.03886666666666666 0.39073333333333327 0.1144 0.5720666666666666 0.07553333333333333 0.1811333333333333 0.18619999999999998 0.3456666666666666 0.3256 0.484l6.306733333333334 6.306733333333334c0.1383333333333333 0.1394 0.30279999999999996 0.25006666666666666 0.484 0.3256 0.18133333333333335 0.07553333333333333 0.3757333333333333 0.1144 0.5720666666666666 0.1144s0.39073333333333327 -0.0388 0.5720666666666666 -0.1144c0.18119999999999997 -0.07553333333333333 0.3456666666666666 -0.18619999999999998 0.484 -0.3256L15.4 5.898999999999999c0.1394 -0.1383333333333333 0.25006666666666666 -0.3028666666666666 0.3256 -0.484 0.0756 -0.18133333333333335 0.1144 -0.3757333333333333 0.1144 -0.5721333333333333 0 -0.1963333333333333 -0.0388 -0.39073333333333327 -0.1144 -0.572 -0.07553333333333333 -0.18126666666666663 -0.18619999999999998 -0.3458 -0.3256 -0.48406666666666665Z" fill="#000000" stroke-width="0.6667"></path>
+                </svg>
+                </div>
+                </div>
+
+            </div>
+            <!-- shoe buttom and links -->
+            <div class="space-x-10">
+              <button
+                class="btn-press-anim h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700"
+              >
+                Add to bag
+              </button>
+              <a href="#" class="lg:text-lg font-bold underline underline-offset-4">
+                view details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards -->
+         <div class="mt-20">
+          <div class="flex-center">
+          <div class="text-4xl font-extrabold bg-[url('/src/img/lines.png')] bg-center">
+            NEW ARRIVALS
+          </div>
+          </div>
+         <div id="cards" class="justify-between mt-10 grid grid-cols-1 gap-y-24 gap-x-6 md:grid-cols-2 xl:grid-cols-[repeat(3,25%)]">
+
+         </div>
+         </div>
+
+         <!-- sidebar -->
+          <div class="hidden w-full h-full bg-white fixed top-0 z-50 ">
+            <div class="relative">
+              <button class="absolute right-23 p-2 text-black font-bold">X</button>
+            </div>
+            
+            <div></div>
+          </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
