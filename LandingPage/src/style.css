@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@layer utilities{
+  .btn{
+    @apply py-4 px-6 rounded-xl; 
+  }
+}
