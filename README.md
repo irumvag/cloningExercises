@@ -32,4 +32,4 @@ you must have node 19+
 ```
 ---
 ### Descrimer 
-All this project are for running purpose.
+All this project are for learning purpose.
