@@ -4,4 +4,7 @@
   .btn{
     @apply py-4 px-6 rounded-full text-white; 
   }
+  .flex-center{
+    @apply flex justify-center items-center;
+  }
 }
